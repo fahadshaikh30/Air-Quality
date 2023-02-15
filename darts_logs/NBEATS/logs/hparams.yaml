@@ -1,0 +1,69 @@
+activation: ReLU
+batch_norm: false
+dropout: 0.16164555061342992
+expansion_coefficient_dim: 5
+generic_architecture: true
+input_chunk_length: 24
+input_dim: 14
+layer_widths:
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+- 64
+likelihood: !!python/object:darts.utils.likelihood_models.QuantileRegression
+  _median_idx: 5
+  first: true
+  prior_strength: 1.0
+  quantiles:
+  - 0.01
+  - 0.05
+  - 0.1
+  - 0.2
+  - 0.25
+  - 0.5
+  - 0.75
+  - 0.8
+  - 0.9
+  - 0.95
+  - 0.99
+  quantiles_tensor: null
+lr_scheduler_cls: null
+lr_scheduler_kwargs: null
+nr_params: 11
+num_blocks: 1
+num_layers: 4
+num_stacks: 32
+optimizer_cls: !!python/name:torch.optim.adam.Adam ''
+optimizer_kwargs:
+  lr: 0.001
+output_chunk_length: 1
+output_dim: 1
+trend_polynomial_degree: 2

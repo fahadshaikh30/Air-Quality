@@ -1,0 +1,197 @@
+MaxPool1d: true
+activation: ReLU
+batch_norm: false
+dropout: 0.19325426421237946
+input_chunk_length: 24
+input_dim: 14
+layer_widths:
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+- 32
+likelihood: !!python/object:darts.utils.likelihood_models.QuantileRegression
+  _median_idx: 5
+  first: true
+  prior_strength: 1.0
+  quantiles:
+  - 0.01
+  - 0.05
+  - 0.1
+  - 0.2
+  - 0.25
+  - 0.5
+  - 0.75
+  - 0.8
+  - 0.9
+  - 0.95
+  - 0.99
+  quantiles_tensor: null
+lr_scheduler_cls: null
+lr_scheduler_kwargs: null
+n_freq_downsample: !!python/tuple
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+nr_params: 11
+num_blocks: 1
+num_layers: 1
+num_stacks: 32
+optimizer_cls: !!python/name:torch.optim.adam.Adam ''
+optimizer_kwargs:
+  lr: 0.001
+output_chunk_length: 1
+output_dim: 1
+pooling_kernel_sizes: !!python/tuple
+- !!python/tuple
+  - 12
+- !!python/tuple
+  - 11
+- !!python/tuple
+  - 10
+- !!python/tuple
+  - 9
+- !!python/tuple
+  - 8
+- !!python/tuple
+  - 8
+- !!python/tuple
+  - 7
+- !!python/tuple
+  - 6
+- !!python/tuple
+  - 6
+- !!python/tuple
+  - 5
+- !!python/tuple
+  - 5
+- !!python/tuple
+  - 4
+- !!python/tuple
+  - 4
+- !!python/tuple
+  - 4
+- !!python/tuple
+  - 3
+- !!python/tuple
+  - 3
+- !!python/tuple
+  - 3
+- !!python/tuple
+  - 3
+- !!python/tuple
+  - 2
+- !!python/tuple
+  - 2
+- !!python/tuple
+  - 2
+- !!python/tuple
+  - 2
+- !!python/tuple
+  - 2
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
+- !!python/tuple
+  - 1
